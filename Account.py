@@ -1,3 +1,6 @@
+from sre_constants import SUCCESS
+
+
 class Account:
     minimum_amount = 100
     account_number = 4301
@@ -58,12 +61,15 @@ class Account:
  # **************************** DEPOSIT ***********************************   
     def deposit(self):
         try:
+            success = False
             print(f"Your current balance is {self.balance}")
             amount = int(input("Enter the amount to deposit : "))
             if(amount > Account.minimum_amount):
                 self.balance += amount
                 print(f"Congratulations! Rs.{amount} has added to your account")
                 print(f"Now your current balance is {self.balance}")
+                success = True
+                return amount, success
             else:
                  print("***************************")
                  print("ERROR!")
@@ -76,6 +82,7 @@ class Account:
  
  # **************************** WITHDRAW *********************************
     def withdraw(self):
+        success = False
         try:
             print(f"Your current balance is {self.balance}")
             amount = int(input("Enter the amount to withdraw : "))
@@ -83,6 +90,8 @@ class Account:
                 self.balance -= amount
                 print(f"Congratulations! Rs.{amount} has deducted from your account")
                 print(f"Now your current balance is {self.balance}")
+                success = True
+                return amount, success
             else:
                 print("***************************")
                 print("ERROR!")
@@ -103,7 +112,5 @@ class Account:
     #          print("ERROR!")
     #          print("Please Enter Valid Fields.  Try again...")  
     
-    # def __repr__(self):
-        #  return self.customer_detail()
-        # pass
-        #  f"Account Number : {self.account_number} \n Name : {self.name} \n Gender : {self.gender} \n Balance : {self.balance} \n Account Pin : {self.pin}"
+    def __repr__(self):
+         return f"Account Number : {self.account_number} \n Name : {self.name} \n Gender : {self.gender} \n Balance : {self.balance} \n Account Pin : {self.pin}"
