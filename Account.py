@@ -88,7 +88,7 @@ class Account:
             amount = int(input("Enter the amount to withdraw : "))
             if(amount > 0 and amount <= self.balance):
                 self.balance -= amount
-                print(f"Congratulations! Rs.{amount} has deducted from your account")
+                print(f"Congratulations! Rs.{amount} has deducted from your account # {self.account_number}")
                 print(f"Now your current balance is {self.balance}")
                 success = True
                 return amount, success
