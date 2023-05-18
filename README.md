@@ -5,11 +5,11 @@ Its basically a python assesment project.Its details are as follows:
 
 # Python Assessment : Banking System Requirements:
 
-## implement OOP concepts
-## Create user account
-## User can deposit, withdraw cash as well as transfer to other Users
-## User can view his/her account details
-## Maintain Transaction history
+- implement OOP concepts
+- Create user account
+- User can deposit, withdraw cash as well as transfer to other Users
+- User can view his/her account details
+- Maintain Transaction history
 
  User Can Perform these actions
 
@@ -22,4 +22,4 @@ Its basically a python assesment project.Its details are as follows:
  7. Transaction History
  8. Exit
 
-## Hint : There will be no inhertance, use Composition
+- Hint : There will be no inhertance, use Composition
