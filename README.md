@@ -1,9 +1,9 @@
 # python-banking-system
 Python Banking System is a console base project which uses classes and their properties like inheritance and composition to allow users to deposit, withdraw and transfer money.
 
-Its basically a python assesment project.Its details are as follows:
+Its basically a python assesment project. Its requirements are as follows:
 
-# Python Assessment : Banking System Requirements:
+# Banking System Requirements
 
 - implement OOP concepts
 - Create user account
